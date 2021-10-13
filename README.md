@@ -1,4 +1,4 @@
-#실행 방법
+# 실행 방법
 프로젝트 root에서
 
 ```shell
@@ -13,15 +13,15 @@ pip install -r requirements.txt
 ```
 를 실행해 주세요.
 
-#사용 기술
+# 사용 기술
 * 언어: Python 3.8
 * 프레임워크: Django
 * 데이터베이스: SQLite3
 * 형상 관리: Git
 
-#구현 스펙
-###SMS 인증 기능
-####인증 번호 요청
+# 구현 스펙
+### SMS 인증 기능
+#### 인증 번호 요청
 >URL: http://localhost:8000/sms-auth/send/
 > 
 >HTTP methods: POST
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 >```
 * 인증 번호 유효시간: 5분
 
-####인증 번호 검증
+#### 인증 번호 검증
 >URL: http://localhost:8000/sms-auth/verify/
 >
 >HTTP methods: POST
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 >>```
 * 인증 완료 코드 유효시간: 10분
 
-###회원 가입 기능
+### 회원 가입 기능
 >URL: http://localhost:8000/user/
 >
 >HTTP methods: POST
@@ -127,7 +127,7 @@ pip install -r requirements.txt
 >>}
 >>```
 
-###로그인 기능
+### 로그인 기능
 >URL: http://localhost:8000/user/login/
 >
 >HTTP methods: POST
@@ -175,7 +175,7 @@ pip install -r requirements.txt
 >>}
 >>```
 
-###내 정보 보기 기능
+### 내 정보 보기 기능
 >URL: http://localhost:8000/user/
 >
 >HTTP methods: GET
@@ -209,7 +209,7 @@ pip install -r requirements.txt
 >>  "detail": "Invalid token."
 >>}
 
-###비밀번호 재설정 기능
+### 비밀번호 재설정 기능
 >URL: http://localhost:8000/user/
 >
 >HTTP methods: PATCH
@@ -239,9 +239,9 @@ pip install -r requirements.txt
 >>}
 >>```
 
-#구현 방법
+# 구현 방법
 * sms_auth와 user는 user가 sms_auth를 사용할 뿐 역할이 다르므로 분리하였습니다.
-###sms_auth
+### sms_auth
 * 전체 Flow
   1. 인증 번호 요청
   2. 인증 번호를 response로 수신(SMS 대신)
@@ -266,7 +266,7 @@ pip install -r requirements.txt
 
 * 보안 및 메모리 관리를 위해, 인증 완료 후에는 expire date와 관계 없이 인증 정보 바로 삭제합니다.
 
-###user
+### user
 * 회원 가입, 비밀번호 재설정 시 sms_auth를 사용하여 인증 확인 코드를 미리 받을 필요가 있습니다.
 
 
