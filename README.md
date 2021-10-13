@@ -6,6 +6,13 @@ python manage.pyrnserver localhost:8000
 ```
 를 실행하면 서버가 실행됩니다. 포트 번호는 필요에 따라 바꿔 주셔도 무방합니다.
 
+
+root에 requirements.txt가 있으므로 필요하다면
+```shell
+pip install -r requirements.txt
+```
+를 실행해 주세요.
+
 #사용 기술
 * 언어: Python 3.8
 * 프레임워크: Django
