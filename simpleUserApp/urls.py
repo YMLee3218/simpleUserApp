@@ -20,4 +20,5 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('sms-auth/', include('sms_auth.urls')),
+    path('user/', include('user.urls')),
 ]
