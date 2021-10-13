@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Add request my user information" />
+    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Clear all db data">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature-user" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,13 +37,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\program\pycharm\simpleUserApp" />
       <recent name="D:\program\pycharm\simpleUserApp\user\migrations" />
       <recent name="D:\program\pycharm\simpleUserApp\user" />
-      <recent name="D:\program\pycharm\simpleUserApp" />
     </key>
   </component>
   <component name="RunManager">
@@ -157,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634118473240</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Clear all db data">
+      <created>1634118794179</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634118794179</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +194,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
@@ -198,6 +208,7 @@
     <MESSAGE value="Add user sign up" />
     <MESSAGE value="Add user login" />
     <MESSAGE value="Add request my user information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add request my user information" />
+    <MESSAGE value="Clear all db data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clear all db data" />
   </component>
 </project>
