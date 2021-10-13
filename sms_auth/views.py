@@ -49,3 +49,12 @@ class SMSAuthenticationVerificationView(MyAPIView):
 
         _sms_authentication.set_life(phone_number, VERIFICATION_TIME)
         return Response({VERIFICATION_CODE: _sms_authentication[phone_number].verification_code})
+
+
+def is_verification_valid(phone_number: str, verification_code: str) -> bool:
+    return (phone_number in _sms_authentication
+            and _sms_authentication[phone_number].verification_code == verification_code)
+
+
+def remove_verification(phone_number: str):
+    del _sms_authentication[phone_number]

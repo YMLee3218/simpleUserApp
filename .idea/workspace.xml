@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Initialize user">
+    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Add user model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleUserApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleUserApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sms_auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sms_auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +43,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/migrations" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\program\pycharm\simpleUserApp\user\migrations" />
       <recent name="D:\program\pycharm\simpleUserApp\user" />
       <recent name="D:\program\pycharm\simpleUserApp" />
     </key>
@@ -131,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634117312077</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add user model">
+      <created>1634117699204</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634117699204</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +181,7 @@
     <MESSAGE value="Add expire_dict to remove authentication data automatically." />
     <MESSAGE value="Add SMSAuthenticationSendingView to send SMS auth number." />
     <MESSAGE value="Initialize user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize user" />
+    <MESSAGE value="Add user model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add user model" />
   </component>
 </project>
