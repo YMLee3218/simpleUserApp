@@ -70,6 +70,21 @@ class UserView(MyAPIView):
             PHONE_NUMBER: profile.phone_number
         })
 
+    def patch(self, request: Request):
+        password: str = request.data[PASSWORD]
+        phone_number: str = request.data[PHONE_NUMBER]
+        verification_code: str = request.data[VERIFICATION_CODE]
+
+        if not is_verification_valid(phone_number, verification_code):
+            return self.get_error_response("유효하지 않은 인증 정보입니다.")
+
+        remove_verification(phone_number)
+
+        user: User = Profile.objects.get(phone_number=phone_number).user
+        user.set_password(password)
+        user.save()
+        return self.get_message_response("비밀번호 변경이 완료되었습니다.")
+
 
 class LoginView(MyAPIView):
     def post(self, request: Request) -> Response:

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Add user login">
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Add request my user information" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634118372539</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add request my user information">
+      <created>1634118473240</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1634118473240</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +197,7 @@
     <MESSAGE value="Add user model" />
     <MESSAGE value="Add user sign up" />
     <MESSAGE value="Add user login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user login" />
+    <MESSAGE value="Add request my user information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add request my user information" />
   </component>
 </project>
