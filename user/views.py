@@ -2,7 +2,7 @@ from typing import Any, Dict
 from uuid import uuid1
 
 from django.contrib.auth import authenticate
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AnonymousUser, User
 from django.forms.fields import EmailField, ValidationError
 from rest_framework.authtoken.models import Token
 from rest_framework.request import Request
@@ -55,6 +55,20 @@ class UserView(MyAPIView):
             return True
         except ValidationError:
             return False
+
+    def get(self, request: Request):
+        if isinstance(request.user, AnonymousUser):
+            return self.get_error_response("로그인이 필요합니다.", 401)
+
+        user: User = request.user
+        profile: Profile = user.profile
+
+        return Response({
+            EMAIL: user.email,
+            NICKNAME: profile.nickname,
+            NAME: profile.name,
+            PHONE_NUMBER: profile.phone_number
+        })
 
 
 class LoginView(MyAPIView):
