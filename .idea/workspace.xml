@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Add expire_dict to remove authentication data automatically.">
+    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Add SMSAuthenticationSendingView to send SMS auth number.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sms_auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sms_auth/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sms_auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sms_auth/views.py" afterDir="false" />
     </list>
@@ -75,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634115507734</updated>
-      <workItem from="1634115562700" duration="975000" />
+      <workItem from="1634115562700" duration="1171000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1634115859990</created>
@@ -112,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634116441085</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add SMSAuthenticationSendingView to send SMS auth number.">
+      <created>1634116626280</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634116626280</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +143,7 @@
     <MESSAGE value="Add additional sms_auth initial files" />
     <MESSAGE value="Add my_view to use common method." />
     <MESSAGE value="Add expire_dict to remove authentication data automatically." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add expire_dict to remove authentication data automatically." />
+    <MESSAGE value="Add SMSAuthenticationSendingView to send SMS auth number." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SMSAuthenticationSendingView to send SMS auth number." />
   </component>
 </project>
