@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Add user model">
+    <list default="true" id="7e3498e6-ba55-4e91-8fc0-4b688c1a1902" name="Changes" comment="Add user sign up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleUserApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleUserApp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sms_auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sms_auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
@@ -144,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634117699204</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add user sign up">
+      <created>1634118233300</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634118233300</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +185,7 @@
     <MESSAGE value="Add SMSAuthenticationSendingView to send SMS auth number." />
     <MESSAGE value="Initialize user" />
     <MESSAGE value="Add user model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user model" />
+    <MESSAGE value="Add user sign up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add user sign up" />
   </component>
 </project>

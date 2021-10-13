@@ -1,5 +1,7 @@
+from typing import Any, Dict
 from uuid import uuid1
 
+from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.forms.fields import EmailField, ValidationError
 from rest_framework.authtoken.models import Token
@@ -53,3 +55,30 @@ class UserView(MyAPIView):
             return True
         except ValidationError:
             return False
+
+
+class LoginView(MyAPIView):
+    def post(self, request: Request) -> Response:
+        password: str = request.data[PASSWORD]
+
+        try:
+            user: User = self.get_user_from(request.data)
+        except (User.DoesNotExist, Profile.DoesNotExist):
+            return self.get_error_response("존재하지 않는 회원입니다.")
+
+        user = authenticate(username=user.username, password=password)
+        if not user:
+            return self.get_error_response("비밀번호가 일치하지 않습니다.")
+
+        token: Token = Token.objects.get(user=user)
+        return Response({TOKEN: token.key})
+
+    @staticmethod
+    def get_user_from(request_data: Dict[str, Any]) -> User:
+        if EMAIL in request_data:
+            return User.objects.get(email=request_data[EMAIL])
+
+        if PHONE_NUMBER in request_data:
+            return Profile.objects.get(phone_number=request_data[PHONE_NUMBER]).user
+
+        raise User.DoesNotExist
